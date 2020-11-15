@@ -23,7 +23,7 @@ public class BubbleSort<E extends Comparable> {
                     list.set(j, temp);
                 }
             }
-            // 优化 如果判断一圈下来 没有进行数据的位置交换，说明排序已经完成，不需要进行后续的执行，提升算法效率
+            // 优化 如果判断一圈下来 没有进行数据的位置交换，说明排序已经完成，不需要进行后续的执行，提升算法效率。
             if(isComplete){
                 break;
             }

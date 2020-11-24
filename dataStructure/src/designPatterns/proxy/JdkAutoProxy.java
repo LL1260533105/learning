@@ -45,8 +45,14 @@ class Tank implements Movable {
     }
 }
 
+/**
+ * 自定义 InvocationHandler  添加被代理对象方法执行时织入逻辑
+ */
 class myInvocationHandle implements InvocationHandler {
 
+    /**
+     * 被代理对象
+     */
     private Tank tank;
 
     public myInvocationHandle(Tank tank) {

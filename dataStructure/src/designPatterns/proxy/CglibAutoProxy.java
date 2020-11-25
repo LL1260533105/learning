@@ -17,8 +17,9 @@ public class CglibAutoProxy {
         Enhancer enhancer = new Enhancer();
         // 设置父类
         enhancer.setSuperclass(Tank2.class);
-        // 设置处理逻辑 类似jdk的InvocationHandler
+        // 设置处理逻辑 类似jdk动态代理的InvocationHandler
         enhancer.setCallback(new MyMethodIntercept());
+        // 生成代理对象
         Tank2 tank2 = (Tank2) enhancer.create();
         tank2.move();
     }
@@ -29,7 +30,7 @@ class MyMethodIntercept implements MethodInterceptor{
 
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-        String name = o.getClass().getSuperclass().getName();
+//        String name = o.getClass().getSuperclass().getName();
         System.out.println("方法开始啦。。。。");
         Object obj = method.invoke(o, objects);
         System.out.println("方法结束啦。。。。");

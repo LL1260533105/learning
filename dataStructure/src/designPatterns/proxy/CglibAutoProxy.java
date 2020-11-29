@@ -37,7 +37,7 @@ class MyMethodIntercept implements MethodInterceptor{
         return obj;
     }
 }
-
+// 被代理对象
 class Tank2 {
 
     public void move() {

@@ -5,8 +5,9 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
+ *  * 代理模式：代理模式给某一个对象提供一个代理对象，并由代理对象控制对原对象的引用
  * jdk 动态代理
- * 代理通过代理接口实现，意味着使用jdk动态代理的类 必须有实现接口，这个是jdk自身的api决定的
+ * 通过代理接口实现，意味着使用jdk动态代理的类 必须有实现接口，这个是jdk自身的api决定的
  */
 public class JdkAutoProxy {
 

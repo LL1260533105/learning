@@ -7,6 +7,7 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
+ *  * 代理模式：代理模式给某一个对象提供一个代理对象，并由代理对象控制对原对象的引用
  * cglib 动态代理  实现方式：生成被代理对象的子类
  * 对于 final 修饰的类 是不能够被代理的
  */

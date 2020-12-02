@@ -1,7 +1,7 @@
 package designPatterns.iterator;
 
 /**
- * 迭代器模式 主要应用于集合的遍历
+ * 迭代器模式 ：提供一种方法顺序访问一个聚合对象中的各种元素，而又不暴露该对象的内部实现
  */
 public class MyArrayList<E> {
     /**

@@ -16,6 +16,9 @@ public class FilterChain {
      */
     private List<Filter> filterList;
 
+    /**
+     * 用来记录链条中处理filter的位置  即index
+     */
     private int size = 0;
 
     public FilterChain() {

@@ -32,6 +32,8 @@ public class FilterChain {
         }
         Filter f = filterList.get(size);
         size++;
+        // 利用递归进行先处理 request，链条中的filter全部处理完request后，在对response进行处理
+        // request 处理  A > Z , response 处理是 Z > A
         return f.doFilter(request, response, this);
     }
 

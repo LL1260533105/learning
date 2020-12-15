@@ -43,7 +43,6 @@ public class FilterChain {
     public static void main(String[] args) {
         FilterChain filterChain = new FilterChain();
         filterChain.addFilter(new NumberFilter());
-        filterChain.addFilter(new CharFilter());
 
         Request request = new Request();
         request.setStr("4sdssdc");

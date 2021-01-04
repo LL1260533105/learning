@@ -8,8 +8,8 @@ import java.util.Objects;
 public class SingleTonDoubleCheckLock {
 
     /**
-     * volatile 作用：1.线程可见；
-     *               2.禁止指令重排序
+     * volatile 作用：1.线程可见； 缓存一致性协议
+     *               2.禁止指令重排序； 添加内存屏障
      */
     private static volatile SingleTonDoubleCheckLock singleTonDoubleCheckLock;
 

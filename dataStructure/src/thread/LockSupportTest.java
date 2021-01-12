@@ -75,7 +75,7 @@ public class LockSupportTest {
     }
 
     /**
-     * 面试题第二种实现方式
+     * 面试题第二种实现方式；通过同步锁的 wait 和 notify方法实现面试题功能
      */
 
     public void second() {
